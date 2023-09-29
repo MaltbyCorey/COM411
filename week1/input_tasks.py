@@ -8,3 +8,10 @@ print("##########")
 print("# 0    0 #")
 print("#   __   #")
 print("##########")
+
+age = input("How old are you (in years)?")
+height = input("How tall are you (in meters)?")
+weight = input("How much do you weigh (in kilograms)?")
+heightsquared = height * height
+bmi = weight / heightsquared
+print(f"{name} you are {age} years old and your bmi is {bmi}")
