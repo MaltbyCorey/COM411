@@ -1,17 +1,18 @@
 # Ask user to enter their name
 print("What is your name?")
 name = input()
-print(f"It is nice to meet you {name}")
 
-# Display a box
-print("##########")
-print("# 0    0 #")
-print("#   __   #")
-print("##########")
+print("What is your age?")
+age = int(input())
 
-age = input("How old are you (in years)?")
-height = input("How tall are you (in meters)?")
-weight = input("How much do you weigh (in kilograms)?")
-heightsquared = height * height
-bmi = weight / heightsquared
-print(f"{name} you are {age} years old and your bmi is {bmi}")
+print("What is your weight?")
+weight = float(input())
+
+print("What is your height?")
+height = float(input())
+
+# Calculate bmi
+bmi = round(weight / (height ** 2), 2)
+
+# Display result
+print(f"{name} your bmi is {bmi}")
