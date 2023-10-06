@@ -9,7 +9,6 @@ if book_type == "adventure":
 
 # Output final message
 print("Finished reading book")
-"""
 
 # Asks user about the activity being performed and gets input
 print("Please enter the activity to be performed")
@@ -26,5 +25,20 @@ else:
 
 # Outputs final message to user
 print("Activity completed!")
+"""
 
+# Asks user for a direction
+print("Towards which direction should I go (up, down, left or right)?")
+direction = input()
 
+# Branches depending on direction
+if direction == "up":
+    print("I am moving in an upward direction!")
+elif direction == "down":
+    print("I am moving in a downward direction!")
+elif direction == "right":
+    print("I am moving in a right direction!")
+elif direction == "left":
+    print("I am moving in a left direction!")
+else:
+    print("That is not a valid direction!")
