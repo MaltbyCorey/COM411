@@ -1,25 +1,26 @@
-# Display message to the screen
-print("Welcome to COM411!")
-print()
-print("In week 1 we will learn...")
-print("...How to use Git and GitHub")
-print("...How to output to the screen")
-print("...How to get user input")
-print()
-print("I hope you are enjoying the lesson thus far!")
+def main():
+    # Display message to the screen
+    print("Welcome to COM411!")
+    print()
+    print("In week 1 we will learn...")
+    print("...How to use Git and GitHub")
+    print("...How to output to the screen")
+    print("...How to get user input")
+    print()
+    print("I hope you are enjoying the lesson thus far!")
 
-# Display escape characters
-print("\n Displays a new line")
-print("\t Displays a tab space")
-print("\\ Displays a back slash")
-print("\" Displays a double quote")
-print("\' Displays a single quote")
+    # Display escape characters
+    print("\n Displays a new line")
+    print("\t Displays a tab space")
+    print("\\ Displays a back slash")
+    print("\" Displays a double quote")
+    print("\' Displays a single quote")
 
-print("I am programming!")
+    print("I am programming!")
 
-# Display a box
-print("##########")
-print("# 0    0 #")
-print("#   __   #")
-print("##########")
+    # Display a box
+    print("##########")
+    print("# 0    0 #")
+    print("#   __   #")
+    print("##########")
 

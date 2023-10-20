@@ -18,15 +18,15 @@ bmi = round(weight / (height ** 2), 2)
 # Display result
 print(f"{name} your bmi is {bmi}")
 """
+def lives_task():
+    print("Please enter the number of lives.")
+    lives = int(input())
 
-print("Please enter the number of lives.")
-lives = int(input())
+    print("Please enter the energy level.")
+    energy = int(input())
 
-print("Please enter the energy level.")
-energy = int(input())
+    print("Please enter the shield level.")
+    shield = int(input())
 
-print("Please enter the shield level.")
-shield = int(input())
-
-print(f"Health has been set\n Lives:  {'♥' * lives}\n Energy: {'♦' * energy}\n Shield: {'♦' * shield}")
+    print(f"Health has been set\n Lives:  {'♥' * lives}\n Energy: {'♦' * energy}\n Shield: {'♦' * shield}")
 
