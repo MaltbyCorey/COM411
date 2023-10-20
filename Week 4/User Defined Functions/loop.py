@@ -6,7 +6,7 @@ def cross_bridge(steps):
 
     # Displaying message
     if steps > 5:
-        return  "The bridge is collapsing!"
+        return "The bridge is collapsing!"
     else:
         return "we must keep going!"
 
