@@ -36,6 +36,17 @@ def display_menu():
     return int(input())
 
 
+# Displays all the passengers names
+def display_passenger_names():
+    print("The names of the passengers are: \n")
+
+    # Loops until all records have been followed
+    for record in records:
+        passenger_name = record[3]
+        if passenger_name != "":
+            print(passenger_name)
+
+
 # Runs the program
 def run():
     # Loads the dataset
@@ -48,6 +59,12 @@ def run():
     # Displays the menu and gets the option chose
     selected_option = display_menu()
     print(f"You have selected option {selected_option}")
+
+    # Runs the function corresponding to the option selected
+    if selected_option == 1:
+        display_passenger_names()
+    else:
+        print("Error! Option not recognised")
 
 
 if __name__ == "__main__":
