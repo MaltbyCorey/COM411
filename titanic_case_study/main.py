@@ -36,15 +36,31 @@ def display_menu():
     return int(input())
 
 
+# Option 1
 # Displays all the passengers names
 def display_passenger_names():
     print("The names of the passengers are: \n")
 
-    # Loops until all records have been followed
+    # Loops until all records have been used
     for record in records:
         passenger_name = record[3]
         if passenger_name != "":
             print(passenger_name)
+
+
+# Option 2
+# Displays the total number of survivors
+def display_number_survivors():
+    num_survived = 0
+
+    # Loops until all records have been used
+    for record in records:
+        # If the survived column contains 1 add it to the total survived
+        status = int(record[1])
+        if status == 1:
+            num_survived += 1
+
+    print(f"{num_survived} passengers survived")
 
 
 # Runs the program
@@ -63,6 +79,8 @@ def run():
     # Runs the function corresponding to the option selected
     if selected_option == 1:
         display_passenger_names()
+    elif selected_option == 2:
+        display_number_survivors()
     else:
         print("Error! Option not recognised")
 
