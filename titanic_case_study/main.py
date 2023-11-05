@@ -29,7 +29,7 @@ def display_menu():
         [2] Display the number of passengers that survived
         [3] Display the number of passengers per gender
         [4] Display the number of passengers per age group
-        [5] Display the number of survivors per age group"
+        [5] Display the number of survivors per age group
         """)
 
     # Returns the users input
@@ -103,6 +103,40 @@ def display_passenger_per_age_group():
     print(f"children: {children}, adults: {adults}, elderly: {elderly}")
 
 
+# Option 5
+# Displays the total number of survives in each age group
+def display_survivors_per_age_group():
+    children = 0
+    adults = 0
+    elderly = 0
+    children_survived = 0
+    adults_survived = 0
+    elderly_survived = 0
+
+    # Loops until all records have been used
+    for record in records:
+        # Checks to see if there is a value for age
+        if record[5] != "":
+            age = float(record[5])
+            survived = int(record[1])
+
+            # Gets the total per age group and the total survived per age group
+            if age < 18:
+                children += 1
+                if survived == 1:
+                    children_survived += 1
+            elif age < 65:
+                adults += 1
+                if survived == 1:
+                    adults_survived += 1
+            else:
+                elderly += 1
+                if survived == 1:
+                    elderly_survived += 1
+
+    print(f"children: {children_survived}/{children}, adults: {adults_survived}/{adults}, elderly: {elderly_survived}/{elderly}")
+
+
 # Runs the program
 def run():
     # Loads the dataset
@@ -125,6 +159,8 @@ def run():
         display_passenger_per_gender()
     elif selected_option == 4:
         display_passenger_per_age_group()
+    elif selected_option == 5:
+        display_survivors_per_age_group()
     else:
         print("Error! Option not recognised")
 
