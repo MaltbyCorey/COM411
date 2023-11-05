@@ -63,6 +63,24 @@ def display_number_survivors():
     print(f"{num_survived} passengers survived")
 
 
+# Option 3
+# Displays the number of passengers per gender
+def display_passenger_per_gender():
+    females = 0
+    males = 0
+
+    # Loops until all records have been used
+    for record in records:
+        gender = record[4]
+        # Adds to the total depending on gender
+        if gender == "female":
+            females += 1
+        elif gender == "male":
+            males += 1
+
+    print(f"females: {females}, males: {males}")
+
+
 # Runs the program
 def run():
     # Loads the dataset
@@ -81,6 +99,8 @@ def run():
         display_passenger_names()
     elif selected_option == 2:
         display_number_survivors()
+    elif selected_option == 3:
+        display_passenger_per_gender()
     else:
         print("Error! Option not recognised")
 
