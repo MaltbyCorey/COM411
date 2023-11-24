@@ -2,6 +2,7 @@ from week9.planet import Planet
 from week9.human import Human
 from week9.robot import Robot
 import random as random
+import matplotlib.pyplot as plt
 
 
 class Universe:
@@ -26,4 +27,17 @@ class Universe:
 
             self.planets.append(planet)
 
+    def show_population(self, selection):
+        x_values = []
+        y_values = []
 
+        for planet in self.planets:
+            x_values.append(planet.name)
+            if selection == "human":
+                y_values.append(len(planet.citizens['humans']))
+            else:
+                y_values.append(len(planet.citizens['robots']))#
+
+            plt.bar(x_values, y_values)
+            plt.tight_layout()
+            plt.show()
