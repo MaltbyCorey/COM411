@@ -42,3 +42,12 @@ class Human:
             return self.energy - abs(new_energy)
 
 
+if __name__ == "__main__":
+    human = Human("Human")
+    print(repr(human))
+    human.move(10)
+    print(repr(human))
+    human.eat(5)
+    print(repr(human))
+    human.eat(20)
+    print(repr(human))

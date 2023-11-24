@@ -30,3 +30,13 @@ class Planet:
 
     def __str__(self):
         return f"The planet has {len(self.citizens['humans'])} humans and {len(self.citizens['robots'])}"
+
+
+if __name__ == "__main__":
+    planet = Planet("Earth")
+    print(repr(planet))
+    prins = Human("Prins")
+    planet.add_human(prins)
+    print(repr(planet))
+    print(planet)
+

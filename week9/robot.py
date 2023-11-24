@@ -19,7 +19,7 @@ class Robot:
     def __str__(self):
         return f"My name is {self.name}, I am {self.age} years old and my energy is {self.energy}"
 
-# Instant Method
+    # Instant Method
     def grow(self):
         self.age += 1
 
@@ -40,3 +40,14 @@ class Robot:
         else:
             self.energy = 0
             return self.energy - abs(new_energy)
+
+
+if __name__ == "__main__":
+    robot = Robot("Robot")
+    print(repr(robot))
+    robot.move(10)
+    print(repr(robot))
+    robot.eat(5)
+    print(repr(robot))
+    robot.eat(20)
+    print(repr(robot))

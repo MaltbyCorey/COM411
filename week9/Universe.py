@@ -41,3 +41,10 @@ class Universe:
             plt.bar(x_values, y_values)
             plt.tight_layout()
             plt.show()
+
+
+if __name__ == "__main__":
+    universe = Universe()
+    universe.generate()
+    universe.show_population("humans")
+    universe.show_population("robots")
