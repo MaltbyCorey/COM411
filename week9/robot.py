@@ -3,8 +3,8 @@ class Robot:
     MAX_ENERGY = 100
 
     # Initializer
-    def __init__(self):
-        self.name = "Robot"
+    def __init__(self, robot):
+        self.name = robot
         self.age = 0
         self.energy = Robot.MAX_ENERGY
 

@@ -25,7 +25,6 @@ class Planet:
         self.citizens["robots"].remove(robot)
 
     # Magic Method
-
     def __repr__(self):
         return f"Planet(human={self.citizens['humans']}, Robots(robot={self.citizens['robots']}"
 
