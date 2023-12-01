@@ -36,7 +36,7 @@ class Universe:
             if selection == "human":
                 y_values.append(len(planet.citizens['humans']))
             else:
-                y_values.append(len(planet.citizens['robots']))#
+                y_values.append(len(planet.citizens['robots']))
 
             plt.bar(x_values, y_values)
             plt.tight_layout()
