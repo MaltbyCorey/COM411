@@ -15,3 +15,11 @@ class Human(Inhabitant):
         return f"My name is {self.name}, I am {self.age} years old and my energy is {self.energy}"
 
 
+if __name__ == "__main__":
+    human = Human()
+    human.move(10)
+    print(repr(human))
+    human.eat(5)
+    print(repr(human))
+    human.eat(20)
+    print(repr(human))
